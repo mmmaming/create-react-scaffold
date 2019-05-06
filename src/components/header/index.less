@@ -1,0 +1,29 @@
+@avatarSize: 35px;
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container:extend(.flex) {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 4px 0 4px grey;
+  background: #fff;
+  z-index: 1;
+  .logo:extend(.flex) {
+    width: 100%;
+    img {
+      height: 40px;
+    }
+  }
+  .avatar {
+    width: @avatarSize;
+    height: @avatarSize;
+    border-radius: 50%;
+    position: absolute;
+    right: 150px;
+  }
+}

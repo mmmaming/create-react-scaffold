@@ -1,0 +1,33 @@
+.menu {
+  padding-top: 20px;
+  width: 100%;
+  height: calc(100% - 250px);
+  overflow: auto;
+
+  .menu-list {
+
+    & li{
+
+      .name {
+        padding-left: 20px;
+        height: 45px;
+        display:flex;
+        align-items: center;
+
+        &:hover {
+          color: #00b4cf;
+          background: blue;
+        }
+
+        span {
+          margin-left: 10px;
+        }
+      }
+
+      .active {
+        color: #00b4cf;
+        background: blue;
+      }
+    }
+  }
+}

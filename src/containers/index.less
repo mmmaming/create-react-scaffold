@@ -1,0 +1,23 @@
+@import '../assets/style/normal.less';
+
+body {
+  position: relative;
+
+  .main {
+    background: #f3f3f3;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    color: #2d4054;
+    font-size: 14px;
+    .container {
+      display: flex;
+      margin-top: 50px;
+      height: calc(100vh - 50px);
+
+      .content {
+        width: calc(100vw - 200px);
+        padding: 20px;
+        overflow-y: auto;
+      }
+    }
+  }
+}
